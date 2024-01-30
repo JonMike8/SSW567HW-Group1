@@ -18,20 +18,20 @@ def test_equilateral():
     assert classify_triangle(2, 2, 2) == "Equilateral"
     assert classify_triangle(3, 3, 3) == "Equilateral"
 def test_scalene():
-        assert classify_triangle(2, 4, 5) == "Scalene"
-        assert classify_triangle(4, 11, 8) == "Scalene"
-        assert classify_triangle(15, 11, 8) == "Scalene"
+    assert classify_triangle(2, 4, 5) == "Scalene"
+    assert classify_triangle(4, 11, 8) == "Scalene"
+    assert classify_triangle(15, 11, 8) == "Scalene"
 
 def test_isocelse():
-        assert classify_triangle(1, 3, 3) == "Isosceles"
-        assert classify_triangle(6, 1, 6) == "Isosceles"
-        assert classify_triangle(8, 8, 1) == "Isosceles"
+    assert classify_triangle(1, 3, 3) == "Isosceles"
+    assert classify_triangle(6, 1, 6) == "Isosceles"
+    assert classify_triangle(8, 8, 1) == "Isosceles"
 
 def test_right():
-       assert classify_triangle(3, 4, 5) == "Right Scalene"
-       assert classify_triangle(1, 1, 2**0.5) == "Right Isosceles"
+   assert classify_triangle(3, 4, 5) == "Right Scalene"
+   assert classify_triangle(1, 1, 2**0.5) == "Right Isosceles"
 
 def test_invalid():
-       assert classify_triangle(1, 1, 0) == "Invalid Input"
-       assert classify_triangle(-3, 4, 5) == "Invalid Input"
-       assert classify_triangle(1, 0, 3) == "Invalid Input"
+   assert classify_triangle(1, 1, 0) == "Invalid Input"
+   assert classify_triangle(-3, 4, 5) == "Invalid Input"
+   assert classify_triangle(1, 0, 3) == "Invalid Input"
